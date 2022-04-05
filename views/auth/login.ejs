@@ -1,0 +1,46 @@
+<% layout("layouts/login") %>
+<h3>
+  <i class="fa-solid fa-pen" style="color: #26a69a"></i>
+  StoryBooks
+</h3>
+<div class="section fontsize">
+  <p>Create public and private stories from your life</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+  <a href="/auth/google" class="btn-large waves-effect google">
+    <i class="fa-brands fa-google left"></i> Sign In With Google
+  </a>
+</div>
+<p class="grey-text darken-4 fontsize">Or</p>
+
+<form action="/login" method="post">
+  <div class="input-field">
+    <i class="fa-solid fa-user prefix"></i>
+    <input
+      id="username"
+      name="username"
+      type="text"
+      class="validate"
+      required
+    />
+    <label for="username">Username</label>
+  </div>
+  <div class="input-field">
+    <i class="fa-solid fa-lock prefix"></i>
+    <input
+      id="password"
+      name="password"
+      type="password"
+      class="validate"
+      required
+    />
+    <label for="password">Password</label>
+  </div>
+  <button class="btn-large submit fontsize" type="submit">
+    LOGIN
+    <i class="material-icons right" style="margin-left: 0">
+      keyboard_arrow_right
+    </i>
+  </button>
+</form>

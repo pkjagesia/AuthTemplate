@@ -1,0 +1,13 @@
+<nav>
+    <div class="nav-wrapper" style="background-color: #2bbbad ;">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <% if(!currUser) { %> 
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        <% } else { %> 
+          <li><a href="/logout">Logout</a></li>
+        <% } %> 
+      </ul>
+    </div>
+</nav>
